@@ -1,0 +1,140 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e0e7ff 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: none;
+}
+
+/* Navigation styles */
+nav.navbar {
+  background: linear-gradient(90deg, #4682b4 60%, #6a5acd 100%);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+nav .navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+nav .navbar-brand img.octofit-logo {
+  height: 40px;
+  margin-right: 12px;
+}
+nav .nav-link {
+  color: #f0f8ff !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav .nav-link.active, nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Headings */
+h1, .display-4, h2, h3, h4, h5, h6 {
+  color: #2b2834;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Table styles */
+table {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(70,130,180,0.08);
+  overflow: hidden;
+}
+th {
+  background: #4682b4 !important;
+  color: #fff !important;
+  font-size: 1.1rem;
+}
+tr:nth-child(even) {
+  background: #e0f7fa !important;
+}
+tr:hover {
+  background: #e0ffff !important;
+}
+
+/* Button styles */
+.btn-primary, .btn-success, .btn-outline-primary {
+  background: linear-gradient(90deg, #4682b4 60%, #6a5acd 100%);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(70,130,180,0.10);
+  transition: background 0.2s;
+}
+.btn-primary:hover, .btn-success:hover, .btn-outline-primary:hover {
+  background: #5a9bd4;
+  color: #fff;
+}
+
+/* Card styles */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(70,130,180,0.10);
+}
+.card-title {
+  color: #4682b4;
+}
+
+/* Link styles */
+a, .App-link {
+  color: #6a5acd;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #4682b4;
+}
+
+/* Modal styles */
+.modal-content {
+  border-radius: 16px;
+}
+
+/* Favicon (handled in public/index.html) */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #2b2834;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
