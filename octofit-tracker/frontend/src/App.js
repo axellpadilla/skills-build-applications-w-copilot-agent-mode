@@ -1,6 +1,11 @@
 
 
-import octofitLogo from './octofitapp-small.png';
+
+import Users from './Users';
+import Teams from './Teams';
+import Activities from './Activities';
+import Leaderboard from './Leaderboard';
+import Workouts from './Workouts';
 
 function App() {
   return (
@@ -43,31 +48,13 @@ function App() {
         </div>
       </div>
 
-      {/* Example Bootstrap Table */}
-      <div className="container mb-5">
-        <h2 className="mb-3 text-dark">Sample Users</h2>
-        <table className="table table-striped table-hover shadow">
-          <thead className="table-primary">
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alice</td>
-              <td>alice@example.com</td>
-              <td><button className="btn btn-outline-primary btn-sm">View</button></td>
-            </tr>
-            <tr>
-              <td>Bob</td>
-              <td>bob@example.com</td>
-              <td><button className="btn btn-outline-primary btn-sm">View</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
+      {/* Section Anchors for Navigation */}
+      <div id="users"><Users /></div>
+      <div id="teams"><Teams /></div>
+      <div id="activities"><Activities /></div>
+      <div id="leaderboard"><Leaderboard /></div>
+      <div id="workouts"><Workouts /></div>
 
       {/* Example Bootstrap Modal Trigger */}
       <div className="container mb-5">
