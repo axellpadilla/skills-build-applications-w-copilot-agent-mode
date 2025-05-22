@@ -30,12 +30,13 @@ router.register(r'workouts', views.WorkoutViewSet)
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = 'https://verbose-spork-6w5x7vxxg7pcx64x-8000.app.github.dev/api/'
     return Response({
-        'users': '/users/',
-        'teams': '/teams/',
-        'activity': '/activity/',
-        'leaderboard': '/leaderboard/',
-        'workouts': '/workouts/',
+        'users': base_url + 'users/',
+        'teams': base_url + 'teams/',
+        'activity': base_url + 'activity/',
+        'leaderboard': base_url + 'leaderboard/',
+        'workouts': base_url + 'workouts/',
     })
 
 urlpatterns = [
