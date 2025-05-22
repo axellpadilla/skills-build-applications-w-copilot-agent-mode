@@ -5,7 +5,10 @@ from datetime import datetime
 class Command(BaseCommand):
     help = 'Populate the octofit_db database with test data.'
 
+    # This script populates the database with test data for users, teams, activities, leaderboard, and workouts.
+
     def handle(self, *args, **kwargs):
+        # The following code inserts test data for all collections required by the app.
         # Clear existing data
         User.objects.all().delete()
         Team.objects.all().delete()
